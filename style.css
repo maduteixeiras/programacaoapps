@@ -5,8 +5,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* página inicial  */
 body {
-    background-image: url("assets/back.jpg");
+    background-color: rgba(161, 23, 216, 0.048);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,12 +16,60 @@ body {
 
 h1 {
     text-align: center;
-    color: rgba(231, 231, 231, 0.637);
+    color: rgba(233, 35, 144, 0.699);
     font-size: 35px;
     margin: 10px;
+  }
+  
+  p {
+    text-align: justify;
+    color: rgb(25, 223, 190);
+    margin: 20px;
+    text-align: center;
+  }
+  
+  
+  button {
+    display: block;
+    height: auto;
+    border-radius: 20px;
+    text-decoration: dashed;
+    text-align: center;
+    background-color: rgba(226, 58, 162, 0.637);
+    padding: 11px;
+    margin: 30px auto;
+  }
+
+
+  a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 3px auto;
+  
+  }
+  
+  /* página da lista  */
+  
+  h2 {
+    text-align: center;
+    color: rgba(233, 35, 144, 0.699);
+    font-size: 35px;
+    margin: 10px;
+    
+  }
+  
+  p2 {
+    text-align: justify;
+    color: rgb(25, 223, 190);
+    margin: 0px;
+    text-align: center;
+
+  }
+  
+  .voltar {
+    color: rgba(233, 35, 144, 0.699);
+    background-color: rgba(48, 233, 208, 0.301);
 }
 
-p {
-    text-align: justify;
-    margin: 20px;
-}
