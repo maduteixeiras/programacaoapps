@@ -18,3 +18,11 @@ git push
 
 Mostrar branches no computador:
 git branch
+
+## Criando Nova Branch pelo Terminal 
+
+git checkout -b nome-da-branch
+
+## Excluindo branch pelo Terminal
+
+git branch -d nome-da-branch

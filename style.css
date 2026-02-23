@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+        font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    color: rgb(235, 15, 125)
+
+}
+
+
+body {
+    background-color: black;
+}
+
+.logo {
+    width: 120px;
+}
+
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+p {
+    text-align: center;
+    padding: 1.7rem;
+}
+
+.Link a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+.Link {
+    background-color: rgb(255, 0, 98);
+    border-radius: 10%;                             
+    text-align: center;
+}
