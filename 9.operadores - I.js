@@ -20,3 +20,4 @@ console.log("\n- Diferença -")
 console.log("Comparando tipo e conteúdo:")
 console.log("Idade e Peso são diferentes?")
 console.log(age !== weigth)
+
