@@ -13,7 +13,7 @@ const ListNames = [
 // const ListNumber [1,2,3,4,5,6,7,8,9,10.11,12,13,14,15,16,17,18,19,20...]
 // Forma simplificada: 
 const ListNumbers = [];
-for (let i = 1; i <= 100; i++) {
+for (let i = 1; i <= 30; i++) {
   ListNumbers.push(i);
 }
 
@@ -59,4 +59,10 @@ Duos.forEach( p => {
 console.log("Na ListNames, exiba todos os nomes com forEach: ")
 ListNames.forEach(u => {
     console.log("Nome:", u)
+})
+
+console.log("\nNa ListUsers, mostre apenas os nomes.")
+UNames = ListUsers.filter(un => un.Name)
+UNames.forEach(un => {
+    console.log("Nome:" , un.Name)
 })
