@@ -57,3 +57,6 @@ Duos.forEach( p => {
 })
 
 console.log("Na ListNames, exiba todos os nomes com forEach: ")
+ListNames.forEach(u => {
+    console.log("Nome:", u)
+})
