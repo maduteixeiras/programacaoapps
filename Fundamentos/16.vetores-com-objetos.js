@@ -41,7 +41,7 @@ const DoubleAge = ListUsers.map(u => ({
     Double: u.Age * 2
 }))
 DoubleAge.forEach(n => {
-    console.log("O dobro da idade de", n.Name, "é", n.Double)
+    console.log("\nO dobro da idade de", n.Name, "é", n.Double)
 })
 
 console.log("\nFiltrando menores de 18 anos: ")
@@ -66,3 +66,15 @@ UNames = ListUsers.filter(un => un.Name)
 UNames.forEach(un => {
     console.log("Nome:" , un.Name)
 })
+
+console.log("\nNa ListUsers, encontre um usuário: ")
+const UserFind = ListUsers.find(u => u.Name === "Maria")
+console.log("Nome: ",UserFind.Name, "\nIdade: ",UserFind.Age)
+
+console.log("\nNa ListUser, encontre Usuário com 11 anos: ")
+const FindAge = ListUsers.find(u => u.Age == 11)
+console.log("Idade: ", FindAge.Age, "\nNome: ", FindAge.Name)
+
+console.log("\nNa ListUsers, some todas as idades: ")
+const SumAges = ListUsers.reduce((total, u) => total + u.Age, 0 )
+console.log(SumAges)
