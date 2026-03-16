@@ -1,3 +1,7 @@
+<!-- Criar um site para solicitar dois números e ao final mostrar: 
+a soma, produto e o menor número entre eles.
+Usando uma linha para cada resultado.
+Deve ter logotipo  -->
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -7,7 +11,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="Container">
+        <img src="assets/logo" alt="">
+        <h1>Calculadora de Números</h1>
+
+        <label for="NumberInput1">Digite o primeiro número:</label>
+        <input type="number" id="NumberInput1" name="number">
+
+        <label for="NumberInput2">Digite o segundo número:</label>
+        <input type="number" id="NumberInput2" name="number">
+        
+        <button id="BntCalculate">Calcular</button>
+
+        <div class="Result" id="Result">
+        </div>
 </body>
 
     <script src="script.js"></script>
