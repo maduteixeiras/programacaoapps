@@ -1,0 +1,84 @@
+/* Se já tiver importado no arquivo anterior, pode pular esta linha */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Roboto:wght@400;700&display=swap');
+
+.info-curso {
+  /* Fundo pesado que remete à pedra escura das Muralhas */
+  background: linear-gradient(to bottom, #2b2724 0%, #1a1715 100%);
+  border: 2px solid #453e38;
+  border-top: 6px solid #8b0000; /* Vermelho escuro dos músculos do Titã */
+  border-radius: 6px;
+  padding: 25px;
+  width: 320px;
+  color: #e3d8c1;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+/* EFEITO 1: O Vapor ardente subindo pela muralha */
+.info-curso::after {
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(214, 58, 47, 0.35) 0%, rgba(214, 58, 47, 0) 100%);
+  transition: bottom 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.info-curso:hover {
+  transform: scale(1.02); /* Leve expansão como se estivesse respirando */
+  border-top-color: #ff3300; /* A borda "esquenta" */
+  box-shadow: 0 10px 30px rgba(255, 51, 0, 0.25), 0 10px 15px rgba(0, 0, 0, 0.8);
+}
+
+.info-curso:hover::after {
+  bottom: 0; /* O calor/vapor sobe até o topo do card */
+}
+
+/* Estilização do Título (EFEITO 2) */
+.info-curso h2 {
+  font-family: 'Cinzel', serif;
+  text-transform: uppercase;
+  color: #b0a697; /* Cor de cimento/pedra */
+  border-bottom: 1px solid #5a5148;
+  padding-bottom: 12px;
+  margin-top: 0;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 2; /* Garante que fique acima do vapor */
+  transition: all 0.3s;
+}
+
+.info-curso:hover h2 {
+  color: #ffddaa; /* Brilha como fogo/brasas */
+  border-bottom: 2px solid #ff3300; /* Linha tracejada vira uma linha sólida incandescente */
+  text-shadow: 0 0 12px rgba(255, 51, 0, 0.9);
+}
+
+/* Estilização das Informações (EFEITO 3) */
+.info-curso p {
+  font-size: 16px;
+  margin: 12px 0;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  border-left: 3px solid #453e38;
+  position: relative;
+  z-index: 2; /* Garante que fique acima do vapor */
+  transition: all 0.3s ease;
+}
+
+.info-curso p:hover {
+  background: rgba(139, 0, 0, 0.3); /* Fundo avermelhado isolado */
+  border-left: 3px solid #ff3300; /* Borda acende */
+  transform: translateX(8px); /* Texto avança bruscamente para a direita */
+  color: #ffffff;
+  box-shadow: -4px 0 12px rgba(255, 51, 0, 0.2);
+}

@@ -1,0 +1,80 @@
+/* Importando fontes para dar um tom épico e militar */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Roboto:wght@400;700&display=swap');
+
+.info-aluno {
+  /* Fundo escuro lembrando as muralhas e o couro do uniforme */
+  background: linear-gradient(135deg, #24211f 0%, #171514 100%);
+  border: 2px solid #3a322c;
+  border-left: 6px solid #2a472a; /* Verde da Tropa de Exploração */
+  border-radius: 6px;
+  padding: 25px;
+  width: 320px;
+  color: #e3d8c1; /* Cor de pergaminho para o texto */
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  position: relative;
+  overflow: hidden; /* Necessário para o efeito da lâmina não vazar */
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+/* EFEITO 1: Transformação Titã e Elevação */
+.info-aluno:hover {
+  transform: translateY(-5px);
+  border-left-color: #8b0000; /* Muda pro vermelho sangue */
+  box-shadow: 0 0 20px rgba(139, 0, 0, 0.4), 0 10px 15px rgba(0, 0, 0, 0.8);
+}
+
+/* EFEITO 2: Corte da Lâmina (DMT) passando por cima do card */
+.info-aluno::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0) 100%);
+  transform: skewX(-30deg); /* Inclinação da espada */
+  transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  pointer-events: none;
+}
+
+.info-aluno:hover::before {
+  left: 200%; /* Faz o reflexo atravessar o card inteiro */
+}
+
+/* Estilização do Título */
+.info-aluno h2 {
+  font-family: 'Cinzel', serif; /* Fonte mais clássica/épica */
+  text-transform: uppercase;
+  color: #d1b271; /* Dourado da insígnia das Asas da Liberdade */
+  border-bottom: 1px solid #4a3b32;
+  padding-bottom: 12px;
+  margin-top: 0;
+  letter-spacing: 2px;
+  transition: color 0.3s;
+}
+
+.info-aluno:hover h2 {
+  color: #c91a1a; /* Título ganha tom ameaçador no hover */
+  text-shadow: 0 0 8px rgba(201, 26, 26, 0.5);
+}
+
+/* Estilização das Informações */
+.info-aluno p {
+  font-size: 16px;
+  margin: 12px 0;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3); /* Fundo sutil para destacar os dados */
+  border-radius: 4px;
+  border-left: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+/* EFEITO 3: Hover em cada linha de informação individual */
+.info-aluno p:hover {
+  background: rgba(42, 71, 42, 0.4); /* Fundo esverdeado da tropa */
+  border-left: 2px solid #d1b271; /* Detalhe dourado */
+  padding-left: 18px; /* Dá um leve "pulo" para a direita */
+  color: #ffffff;
+}

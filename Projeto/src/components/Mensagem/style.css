@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mensagem h1 {
+    color: rgb(255, 0, 0);
+    margin: 10px 0;
+}
+
+.mensagem p {
+    color: rgb(212, 2, 2);
+    margin: 10px 0;
+}
