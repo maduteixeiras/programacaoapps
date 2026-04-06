@@ -12,7 +12,7 @@ function App() {
           <AdicionarUser />
         </main>
         <Footer />
-      </div>
+      </div> 
       
     </>
   )
